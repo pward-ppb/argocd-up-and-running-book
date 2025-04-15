@@ -1,0 +1,11 @@
+---
+
+controller:
+  service:
+    type: NodePort
+  hostPort:
+    enabled: true
+  extraArgs:
+    enable-ssl-passthrough: true
+  updateStrategy:
+    type: Recreate
